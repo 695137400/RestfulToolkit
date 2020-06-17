@@ -74,7 +74,7 @@ public class RestServiceStructure extends SimpleTreeStructure {
     }
 
     public void update() {
-        List<RestServiceProject> projects = RestServiceProjectsManager.getInstance(myProject).getServiceProjects();
+        List<RestServiceProject> projects = RestServiceProjectsManager.getInstance(myProjectsManager.myProject).getServiceProjects();
         this.updateProjects(projects);
     }
 
